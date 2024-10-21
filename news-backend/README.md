@@ -5,7 +5,8 @@
 ```bash
 pip install -r requirements.txt
 ```
-3. Apply migrations
+3. Create .env file. Use .env.example for the variables list
+4. Apply migrations
 ```bash
 python manage.py migrate
 ```
