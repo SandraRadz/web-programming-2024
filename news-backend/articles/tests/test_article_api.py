@@ -11,6 +11,7 @@ def test_get_article_list(api_client, user) -> None:
     response = api_client.get("/articles/", format="json")
     assert response.status_code == 200
     assert len(response.data) == 1
+    assert response.data[0].get('title') == 'test-article'
 
 
 @pytest.mark.django_db
